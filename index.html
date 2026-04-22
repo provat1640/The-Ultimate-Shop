@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate Shop — premium apparel and fast delivery.">
+    <title>Ultimate Shop - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow site-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">The Ultimate Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> Cart <span
+                                class="badge bg-danger rounded-pill cart-badge"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-light btn-sm fw-bold" href="login.html"><i
+                                class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm fw-bold" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- main content -->
+    <main class="flex-grow-1">
+        
+        <!-- HERO SECTION: The big banner at the top -->
+        <header class="hero d-flex align-items-center text-center">
+            <div class="container text-white py-5">
+                <span class="badge bg-primary mb-3 py-2 px-3 fs-6 rounded-pill text-uppercase">Fall Collection 2026</span>
+                <h1 class="display-4 fw-bold mb-3">Redefine Your Everyday Style</h1>
+                <p class="lead mb-4 fw-normal col-lg-8 mx-auto text-white opacity-75">
+                    Discover exclusive apparel blending premium materials with contemporary designs.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="shop.html" class="btn btn-primary btn-lg fw-bold px-4 shadow-sm">Shop All <i
+                            class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- NEW ARRIVALS SECTION: Displays products dynamically loaded from the database -->
+        <section class="py-5 bg-white page-shell">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading fs-2 mb-2"><i class="fa-solid fa-fire text-danger me-2"
+                            aria-hidden="true"></i>New Arrivals</h2>
+                    <p class="section-sub mb-0">Fresh picks synced from the catalog.</p>
+                </div>
+
+                <div id="new-arrivals-container" class="row g-4 justify-content-center">
+                    <div class="col-12 text-center text-muted py-5">
+                        <div class="spinner-border text-primary mb-3" role="status" aria-label="Loading"></div>
+                        <p class="fw-semibold text-secondary mb-0">Loading new arrivals…</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="shop.html" class="btn btn-outline-dark fw-bold px-5 py-2 rounded-pill">View all products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION: Displays store's key features (delivery, quality) -->
+        <section class="py-5 border-top bg-light">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 h-100 rounded-4 bg-white shadow-sm border border-light">
+                            <i class="fa-solid fa-truck-fast text-primary fs-1 mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-bold">Fast delivery</h5>
+                            <p class="text-muted small mb-0">Reliable shipping to your door.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 h-100 rounded-4 bg-white shadow-sm border border-light">
+                            <i class="fa-solid fa-money-bill-wave text-success fs-1 mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-bold">Cash on delivery</h5>
+                            <p class="text-muted small mb-0">Pay when your package arrives.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 h-100 rounded-4 bg-white shadow-sm border border-light">
+                            <i class="fa-solid fa-shield-halved text-warning fs-1 mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-bold">Premium quality</h5>
+                            <p class="text-muted small mb-0">Curated fabrics and finishing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- footer -->
+    <footer class="site-footer text-center">
+        <div class="container">
+            <p class="footer-brand mb-2">The Ultimate Shop</p>
+            <p class="small text-white opacity-75 mb-3">Full-stack coursework project · 2026</p>
+            <p class="small text-white opacity-75 mb-0">&copy; 2026 The Ultimate Shop.</p>
+        </div>
+    </footer>
+
+<!-- scripts -->
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // When the page loads, fetch the new arrivals from the Node.js backend API
+        document.addEventListener('DOMContentLoaded', async () => {
+            const container = document.getElementById('new-arrivals-container');
+            try {
+                const res = await fetch('http://localhost:3000/api/products/new-arrivals');
+                if (!res.ok) throw new Error('Failed');
+                const arrivals = await res.json();
+
+                container.innerHTML = '';
+                // If there are no products, show a message
+                if (!arrivals.length) {
+                    container.innerHTML =
+                        '<p class="text-center text-muted col-12 py-4">No new arrivals in the catalog right now.</p>';
+                    return;
+                }
+
+                // Loop through each product and create a card
+                // Use data-* attributes to avoid quote-escaping bugs in onclick
+                arrivals.forEach((p) => {
+                    const name = escapeHtml(p.name);
+                    const img  = escapeHtml(p.image);
+                    container.innerHTML += `
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-hover border-0 shadow-sm h-100 position-relative">
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-3 shadow">NEW</span>
+                                <img src="${img}" class="card-img-top product-img rounded-top" alt="${name}">
+                                <div class="card-body d-flex flex-column text-center bg-white rounded-bottom">
+                                    <h5 class="card-title fw-bold text-dark">${name}</h5>
+                                    <p class="card-text text-primary fw-bold mb-3 fs-5">TK ${Number(p.price)}</p>
+                                    <button type="button"
+                                        class="btn btn-outline-dark btn-sm mt-auto fw-bold js-add-to-cart"
+                                        data-id="${p.id}"
+                                        data-name="${name}"
+                                        data-price="${Number(p.price)}"
+                                        data-image="${img}">
+                                        <i class="fa-solid fa-cart-plus" aria-hidden="true"></i> Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+
+                // Single event listener — no inline onclick, no quote issues
+                container.addEventListener('click', (e) => {
+                    const btn = e.target.closest('.js-add-to-cart');
+                    if (!btn) return;
+                    addToCart(
+                        btn.dataset.id,
+                        btn.dataset.name,
+                        Number(btn.dataset.price),
+                        btn.dataset.image
+                    );
+                });
+
+            } catch (e) {
+                container.innerHTML =
+                    `<div class="col-12"><div class="alert alert-warning border-0 shadow-sm mb-0" role="alert">
+                        <strong>Could not load products.</strong> Make sure <code>node server.js</code> is running on port 3000.
+                    </div></div>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
